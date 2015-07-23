@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    ul li {
+        list-style: none;
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        float: left;
+        margin: 20px;
+    }
+    </style>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+    <script>
+    $(function() {
+        $('li').slice(9).css('background', 'red');
+    });
+    </script>
+    <!DOCTYPE HTML>
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>返回值函数</title>
+        <script type="text/javascript">
+        function app2(x, y) {
+            var sum, x, y;
+            sum = x * y;
+            return sum;
+        }
+        req1 = app2(3, 4);
+        req2 = app2(5, 6);
+        sumq = req2 + req1;
+
+
+
+        document.write("req1的值:" + req1 + "<br/>");
+        document.write("req2的值:" + req2 + "<br/>");
+        document.write(req1 + "与" + req2 + "和:" + sumq);
+        </script>
+    </head>
+
+    <body>
+    </body>
+
+    </html>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
